@@ -652,14 +652,117 @@
 
 //Arrow JS
 //sum function(normal)
-function sum(a,b){
-  return a+b;
-}
+// function sum(a,b){
+//   return a+b;
+// }
 //Arrow method(modern Js)
-const arrowSum=(a,b)=>{
-  console.log(a+b);
-};
+// const arrowSum=(a,b)=>{
+//   console.log(a+b);
+// };
 
-const arrowMul=(x,y)=>{
-  console.log(x*y);
-};
+// const arrowMul=(x,y)=>{
+//   console.log(x*y);
+// };
+
+// const printHello=()=>{
+//   console.log("Jay Rastrabad");
+// };
+
+//Qs:Create a function using the "function" keyword that takes a String as an argument and returns the number of vowels in the string.
+// function vowels(str){
+//  let count=0;
+//  for(let ch of str){
+//   if(ch==="a"||ch==="e"||ch==="i"||ch==="o"||ch==="u"){
+// count++;
+//   }
+//  }
+
+
+// console.log(count);
+// }
+
+//Qs2:Use the arrow method to solve the same program.
+// const countVow=(str)=>{
+//    let count=0;
+//   for(let ch of str){ 
+//    if(ch==="a"||ch==="e"||ch==="i"||ch==="o"||ch==="u"){
+//  count++;
+//    }
+//  }
+//  return count;
+// };;
+
+//For Each Loop
+//  let arr=[1,3,5,7,9];
+//  arr.forEach(function gameVal(val,idx){//Value of array moves to val at each index.
+//  console.log(val,idx);
+//  });
+
+//Qs:For a given array of numbers, print the sqaure of each value using the forEach loop.
+// let arr=[1,3,5,7,11];
+// arr.forEach(function squareVal(val,idx){
+// console.log(val*val,idx)
+// });
+
+// let num=[2,5,7,8];
+// num.forEach((num) =>{
+// console.log(num*num);//num**2 also valid
+// });
+
+//Map method
+
+// let nums=[3,5,7,9];
+// let newArr=nums.map((val)=>{
+//   return val**3;//Creating newarray (cube of org array) with the help of map.
+// })
+// console.log(newArr);
+
+//Filter method
+
+// let arr=[1,2,4,5,7,8,9];
+
+// let evenNum=arr.filter((val)=>{
+//   return val%2==0;
+// });
+// console.log(evenNum);
+
+//Reduce method
+// const arr=[1,2,3,4];
+
+// const output=arr.reduce((res,currVal)=>{
+//   return res+currVal;
+// });
+
+// console.log(output);// 10
+//Finding max number.
+// let arr=[5,4,3,6,2];
+// const output=arr.reduce((prev,curr)=>{
+//   return prev>curr ? prev:curr;
+// });
+// console.log(output);//6
+
+//Practice questions
+//We are given array of marks of students. Filter out the marks of the students that scored 90+.
+// let arr=[45,91,67,94,54];
+// const output=arr.filter(val=>{
+//   return val>90;
+// });
+// console.log(output);
+
+//Qs:Take a number n as input from user.Create an array of numbers from 1 to n.Use the reduce method to calculate sum of all numbers in the array.Use the reduce method to calculate product of all numbers in the array.
+//  let n= prompt("Enter a number:");
+//  let arr=[];
+//  for(let i=1;i<=n;i++){
+//   arr[i-1]=i;//1(0=>index),2(1),3(2),4(3),5(4),n(n-1)
+//  }
+// console.log(arr);
+
+// const sum=arr.reduce((prev,curr)=>{
+//   return prev+curr;
+// });
+// console.log(sum);
+
+// const product=arr.reduce((prev,curr)=>{
+//   return prev*curr;
+// });
+// console.log(product);
